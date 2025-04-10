@@ -9,24 +9,26 @@ dato ={
 def  Menu_Opcion ():
 
     while True:
+        print(">Bienvenidos<")
         print("Editar")
         print("Eliminar")
+        print("Salir")
         Opc = input ("Ingrese una Opción: ")
         if Opc == "Editar":
             keys_Usuario()
         elif  Opc == "Eliminar":
             elimnar_Producto()
         elif Opc == "Salir":
-            print("GRACIAS")
+            print("Gracias! Por visitarnos")
             break
         else: 
-            print("Opcion Invalida")
+            print(">Opcion Invalida<")
 
 
 def keys_Usuario():
     print(dato)
     acceso_KeysEdit = input ("Clave para editar dato: ")
-    dato_Producto= input("nuevo dato")
+    dato_Producto= input("nuevo dato: ")
     dato[acceso_KeysEdit]=dato_Producto
     print(dato)
 
